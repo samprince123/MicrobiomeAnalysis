@@ -1,0 +1,79 @@
+started with demux.qza file 
+
+using galaxy i ran qiime2 tools import
+Import data into a QIIME 2 artifact
+(Galaxy Version 2024.10.0+dist.h3d8a7e27)
+with default settings
+
+ qiime2 dada2 denoise-ccs
+Denoise and dereplicate single-end Pacbio CCS
+(Galaxy Version 2024.10.0+q2galaxy.2024.10.0)
+with default settings 
+
+ qiime2 feature-table summarize
+Summarize table
+(Galaxy Version 2024.10.0+q2galaxy.2024.10.0)
+with default settings 
+
+qiime2 feature-table tabulate-seqs
+View sequence associated with each feature
+(Galaxy Version 2024.10.0+q2galaxy.2024.10.0)
+with default settings
+
+ qiime2 feature-classifier classify-sklearn
+Pre-fitted sklearn-based taxonomy classifier
+(Galaxy Version 2024.10.0+q2galaxy.2024.10.0)
+with default settings 
+
+ qiime2 metadata tabulate
+Interactively explore Metadata in an HTML table
+(Galaxy Version 2024.10.0+q2galaxy.2024.10.0)
+with default setting except metadata rom artifact 
+
+ qiime2 taxa filter-table
+Taxonomy-based feature table filter.
+(Galaxy Version 2024.10.0+q2galaxy.2024.10.0)
+with additional settings to exclude mitochondria,chloroplast
+
+ qiime2 taxa filter-table
+Taxonomy-based feature table filter.
+(Galaxy Version 2024.10.0+q2galaxy.2024.10.0)
+with default settings except to exclude K_archaea
+
+qiime2 taxa filter-table
+Taxonomy-based feature table filter.
+(Galaxy Version 2024.10.0+q2galaxy.2024.10.0)
+with default settings except to exclude K_eukaryota
+
+ qiime2 taxa filter-seqs
+Taxonomy-based feature sequence filter.
+(Galaxy Version 2024.10.0+q2galaxy.2024.10.0)
+with default setting except to exclude mitochondria, chloroplast
+ 
+ qiime2 taxa filter-seqs
+Taxonomy-based feature sequence filter.
+(Galaxy Version 2024.10.0+q2galaxy.2024.10.0) 
+with default settings except to exclude K_archaea
+
+ qiime2 taxa filter-seqs
+Taxonomy-based feature sequence filter.
+(Galaxy Version 2024.10.0+q2galaxy.2024.10.0)
+with default settings except to exclude K_eukaryota
+
+ qiime2 taxa barplot
+Visualize taxonomy with an interactive bar plot
+(Galaxy Version 2024.10.0+q2galaxy.2024.10.0)
+with default settings except classifications.qzv and metadata.txt
+
+  qiime2 phylogeny align-to-tree-mafft-fasttree
+Build a phylogenetic tree using fasttree and mafft alignment
+(Galaxy Version 2024.10.0+q2galaxy.2024.10.0)
+with default settings
+
+
+ qiime2 feature-table summarize
+Summarize table
+(Galaxy Version 2024.10.0+q2galaxy.2024.10.0)
+with default settings and metadata added
+
+
